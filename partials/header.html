@@ -1,0 +1,32 @@
+<h1>Sam Martinez</h1>
+<header class="navigation" role="banner">
+  <div class="navigation-wrapper">
+    <a href="javascript:void(0)" class="navigation-menu-button" id="js-mobile-menu">MENU</a>
+    <nav role="navigation">
+      <ul id="js-navigation-menu" class="navigation-menu show">
+        <li class="nav-link"><a href="index.html">Home</a></li>
+        <li class="nav-link"><a ui-sref="about">About</a></li>
+        <li class="nav-link"><a ui-sref="projects">Projects</a></li>
+        <li class="nav-link"><a ui-sref="contact">Contact</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<script>
+$(document).ready(function() {
+  var menuToggle = $('#js-mobile-menu').unbind();
+  $('#js-navigation-menu').removeClass("show");
+
+  menuToggle.on('click', function(e) {
+    e.preventDefault();
+    $('#js-navigation-menu').slideToggle(function(){
+      if($('#js-navigation-menu').is(':hidden')) {
+        $('#js-navigation-menu').removeAttr('style');
+      }
+    });
+  });
+});
+</script>
