@@ -6,9 +6,10 @@ html {
   box-sizing: inherit; }
 
 body {
+  height: 100%;
   font: 100% "Merriweather", Helvetica, cursive, sans-serif;
   color: black;
-  background-color: #E7E7E7; }
+  background-color: #F5F5F5; }
 
 header {
   text-align: center; }
@@ -73,7 +74,6 @@ header.navigation {
     header.navigation .navigation-menu-button:focus, header.navigation .navigation-menu-button:hover {
       color: white; }
   header.navigation nav {
-    float: none;
     min-height: 60px;
     z-index: 9999999; }
     @media screen and (min-width: 53.75em) {

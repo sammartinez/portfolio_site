@@ -1,0 +1,9 @@
+{
+  "firebase": "sams-portfolio-site",
+  "public": ".",
+  "ignore": [
+    "firebase.json",
+    "**/.*",
+    "**/node_modules/**"
+  ]
+}
