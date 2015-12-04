@@ -33,7 +33,8 @@ nav a:hover {
 .about img {
   height: 280px;
   float: left;
-  border-radius: 50%; }
+  border-radius: 50%;
+  top: 0; }
 
 .defaultBackground {
   padding: 5px;
